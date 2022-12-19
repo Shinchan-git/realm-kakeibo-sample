@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1040BA294C277100CC0231 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1040B9294C277100CC0231 /* NewItemViewController.swift */; };
+		EB960C96294C230F00DA13A6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C94294C230F00DA13A6 /* ItemTableViewCell.swift */; };
+		EB960C97294C230F00DA13A6 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB960C95294C230F00DA13A6 /* ItemTableViewCell.xib */; };
 		EB9C6581293E1E1200CF5FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6580293E1E1200CF5FED /* AppDelegate.swift */; };
 		EB9C6583293E1E1200CF5FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6582293E1E1200CF5FED /* SceneDelegate.swift */; };
 		EB9C6585293E1E1200CF5FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6584293E1E1200CF5FED /* ViewController.swift */; };
 		EB9C6588293E1E1200CF5FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9C6586293E1E1200CF5FED /* Main.storyboard */; };
 		EB9C658A293E1E1400CF5FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9C6589293E1E1400CF5FED /* Assets.xcassets */; };
 		EB9C658D293E1E1400CF5FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9C658B293E1E1400CF5FED /* LaunchScreen.storyboard */; };
+		EB9C659A293E2B0C00CF5FED /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6599293E2B0C00CF5FED /* ShoppingItem.swift */; };
+		EB9C659C293E2C2F00CF5FED /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C659B293E2C2F00CF5FED /* Category.swift */; };
+		EB9C659F293E32CA00CF5FED /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = EB9C659E293E32CA00CF5FED /* Realm */; };
+		EB9C65A1293E32CA00CF5FED /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB9C65A0293E32CA00CF5FED /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB1040B9294C277100CC0231 /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
+		EB960C94294C230F00DA13A6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		EB960C95294C230F00DA13A6 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		EB9C657D293E1E1200CF5FED /* RealmKakeioboSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmKakeioboSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9C6580293E1E1200CF5FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB9C6582293E1E1200CF5FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		EB9C6589293E1E1400CF5FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9C658C293E1E1400CF5FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB9C658E293E1E1400CF5FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9C6599293E2B0C00CF5FED /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		EB9C659B293E2C2F00CF5FED /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9C65A1293E32CA00CF5FED /* RealmSwift in Frameworks */,
+				EB9C659F293E32CA00CF5FED /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +73,12 @@
 				EB9C6580293E1E1200CF5FED /* AppDelegate.swift */,
 				EB9C6582293E1E1200CF5FED /* SceneDelegate.swift */,
 				EB9C6584293E1E1200CF5FED /* ViewController.swift */,
+				EB1040B9294C277100CC0231 /* NewItemViewController.swift */,
 				EB9C6586293E1E1200CF5FED /* Main.storyboard */,
+				EB960C94294C230F00DA13A6 /* ItemTableViewCell.swift */,
+				EB960C95294C230F00DA13A6 /* ItemTableViewCell.xib */,
+				EB9C6599293E2B0C00CF5FED /* ShoppingItem.swift */,
+				EB9C659B293E2C2F00CF5FED /* Category.swift */,
 				EB9C6589293E1E1400CF5FED /* Assets.xcassets */,
 				EB9C658B293E1E1400CF5FED /* LaunchScreen.storyboard */,
 				EB9C658E293E1E1400CF5FED /* Info.plist */,
@@ -83,6 +102,10 @@
 			dependencies = (
 			);
 			name = RealmKakeioboSample;
+			packageProductDependencies = (
+				EB9C659E293E32CA00CF5FED /* Realm */,
+				EB9C65A0293E32CA00CF5FED /* RealmSwift */,
+			);
 			productName = RealmKakeioboSample;
 			productReference = EB9C657D293E1E1200CF5FED /* RealmKakeioboSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = EB9C6574293E1E1200CF5FED;
+			packageReferences = (
+				EB9C659D293E32CA00CF5FED /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = EB9C657E293E1E1200CF5FED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB960C97294C230F00DA13A6 /* ItemTableViewCell.xib in Resources */,
 				EB9C658D293E1E1400CF5FED /* LaunchScreen.storyboard in Resources */,
 				EB9C658A293E1E1400CF5FED /* Assets.xcassets in Resources */,
 				EB9C6588293E1E1200CF5FED /* Main.storyboard in Resources */,
@@ -139,8 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9C6585293E1E1200CF5FED /* ViewController.swift in Sources */,
+				EB9C659C293E2C2F00CF5FED /* Category.swift in Sources */,
+				EB9C659A293E2B0C00CF5FED /* ShoppingItem.swift in Sources */,
 				EB9C6581293E1E1200CF5FED /* AppDelegate.swift in Sources */,
+				EB960C96294C230F00DA13A6 /* ItemTableViewCell.swift in Sources */,
 				EB9C6583293E1E1200CF5FED /* SceneDelegate.swift in Sources */,
+				EB1040BA294C277100CC0231 /* NewItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +389,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB9C659D293E32CA00CF5FED /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB9C659E293E32CA00CF5FED /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB9C659D293E32CA00CF5FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		EB9C65A0293E32CA00CF5FED /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB9C659D293E32CA00CF5FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB9C6575293E1E1200CF5FED /* Project object */;
 }
