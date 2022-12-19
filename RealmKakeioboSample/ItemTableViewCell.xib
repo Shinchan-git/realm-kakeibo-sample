@@ -17,22 +17,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRW-2h-vWh">
-                        <rect key="frame" x="82" y="27.666666666666671" width="42" height="21"/>
+                        <rect key="frame" x="68" y="20.666666666666668" width="42" height="21.000000000000004"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-d1-CGJ">
-                        <rect key="frame" x="262" y="27.666666666666671" width="42" height="21"/>
+                        <rect key="frame" x="262" y="20.666666666666668" width="42" height="21.000000000000004"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AZm-ZT-uGC">
-                        <rect key="frame" x="16" y="8" width="60" height="60"/>
+                        <rect key="frame" x="16" y="8" width="46" height="46"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="IxV-xV-YMs"/>
-                            <constraint firstAttribute="width" constant="60" id="zPd-U2-1Lp"/>
+                            <constraint firstAttribute="height" constant="46" id="IxV-xV-YMs"/>
+                            <constraint firstAttribute="width" constant="46" id="zPd-U2-1Lp"/>
                         </constraints>
                     </imageView>
                 </subviews>

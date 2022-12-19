@@ -53,30 +53,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-kR-3Gm">
-                                <rect key="frame" x="36" y="115.66666666666669" width="318" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbI-lT-2yg">
-                                <rect key="frame" x="32" y="210" width="326" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQO-sR-6Ko">
-                                <rect key="frame" x="31.999999999999996" y="87.333333333333329" width="34.666666666666643" height="20.333333333333329"/>
+                                <rect key="frame" x="31.999999999999996" y="104" width="34.666666666666643" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-kR-3Gm">
+                                <rect key="frame" x="30" y="132.33333333333334" width="330" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="値段（円）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFz-2u-jw6">
-                                <rect key="frame" x="32.000000000000007" y="181.66666666666666" width="86.666666666666686" height="20.333333333333343"/>
+                                <rect key="frame" x="32.000000000000007" y="214.33333333333334" width="86.666666666666686" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbI-lT-2yg">
+                                <rect key="frame" x="30" y="242.66666666666663" width="330" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEL-Tm-ZUD">
-                                <rect key="frame" x="32" y="276" width="326" height="31"/>
+                                <rect key="frame" x="32" y="324.66666666666669" width="326" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重要なアイテムとしてマーク" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLV-eh-D9h">
                                         <rect key="frame" x="0.0" y="0.0" width="277" height="31"/>
@@ -93,18 +93,18 @@
                         <viewLayoutGuide key="safeArea" id="QB4-LG-wGd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eFz-2u-jw6" firstAttribute="top" secondItem="6yS-kR-3Gm" secondAttribute="bottom" constant="32" id="3WR-7j-e2o"/>
+                            <constraint firstItem="eFz-2u-jw6" firstAttribute="top" secondItem="6yS-kR-3Gm" secondAttribute="bottom" constant="48" id="3WR-7j-e2o"/>
                             <constraint firstItem="kbI-lT-2yg" firstAttribute="centerX" secondItem="hwY-Jh-wGd" secondAttribute="centerX" id="4Mp-M9-1pC"/>
                             <constraint firstItem="dQO-sR-6Ko" firstAttribute="leading" secondItem="QB4-LG-wGd" secondAttribute="leading" constant="32" id="85U-MN-ZaL"/>
                             <constraint firstItem="eFz-2u-jw6" firstAttribute="leading" secondItem="QB4-LG-wGd" secondAttribute="leading" constant="32" id="Jcz-xO-d4h"/>
-                            <constraint firstItem="kbI-lT-2yg" firstAttribute="leading" secondItem="QB4-LG-wGd" secondAttribute="leading" constant="32" id="LFw-01-Fg5"/>
+                            <constraint firstItem="kbI-lT-2yg" firstAttribute="leading" secondItem="QB4-LG-wGd" secondAttribute="leading" constant="30" id="LFw-01-Fg5"/>
                             <constraint firstItem="QB4-LG-wGd" firstAttribute="trailing" secondItem="OEL-Tm-ZUD" secondAttribute="trailing" constant="32" id="PC5-rO-Uao"/>
-                            <constraint firstItem="QB4-LG-wGd" firstAttribute="trailing" secondItem="6yS-kR-3Gm" secondAttribute="trailing" constant="36" id="Py7-UW-xwg"/>
+                            <constraint firstItem="QB4-LG-wGd" firstAttribute="trailing" secondItem="6yS-kR-3Gm" secondAttribute="trailing" constant="30" id="Py7-UW-xwg"/>
                             <constraint firstItem="kbI-lT-2yg" firstAttribute="top" secondItem="eFz-2u-jw6" secondAttribute="bottom" constant="8" id="TaM-Jh-mz7"/>
-                            <constraint firstItem="6yS-kR-3Gm" firstAttribute="leading" secondItem="QB4-LG-wGd" secondAttribute="leading" constant="36" id="WrJ-eA-KTT"/>
-                            <constraint firstItem="QB4-LG-wGd" firstAttribute="bottom" secondItem="OEL-Tm-ZUD" secondAttribute="bottom" constant="480" id="kxo-Vf-O8q"/>
+                            <constraint firstItem="6yS-kR-3Gm" firstAttribute="leading" secondItem="QB4-LG-wGd" secondAttribute="leading" constant="30" id="WrJ-eA-KTT"/>
+                            <constraint firstItem="dQO-sR-6Ko" firstAttribute="top" secondItem="QB4-LG-wGd" secondAttribute="top" constant="48" id="l9c-tO-17c"/>
                             <constraint firstItem="OEL-Tm-ZUD" firstAttribute="leading" secondItem="QB4-LG-wGd" secondAttribute="leading" constant="32" id="pc5-7A-PAL"/>
-                            <constraint firstItem="OEL-Tm-ZUD" firstAttribute="top" secondItem="kbI-lT-2yg" secondAttribute="bottom" constant="32" id="vel-yf-Hth"/>
+                            <constraint firstItem="OEL-Tm-ZUD" firstAttribute="top" secondItem="kbI-lT-2yg" secondAttribute="bottom" constant="48" id="vel-yf-Hth"/>
                             <constraint firstItem="6yS-kR-3Gm" firstAttribute="top" secondItem="dQO-sR-6Ko" secondAttribute="bottom" constant="8" id="xgO-Rq-PT1"/>
                         </constraints>
                     </view>
