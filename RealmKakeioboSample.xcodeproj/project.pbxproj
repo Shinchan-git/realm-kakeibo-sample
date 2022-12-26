@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EB1040BA294C277100CC0231 /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1040B9294C277100CC0231 /* NewItemViewController.swift */; };
+		EB3A88BA2959241A00EC8418 /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3A88B92959241A00EC8418 /* NewCategoryViewController.swift */; };
+		EB4FE3812958305200C6302C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FE3802958305200C6302C /* CategoryViewController.swift */; };
 		EB960C96294C230F00DA13A6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB960C94294C230F00DA13A6 /* ItemTableViewCell.swift */; };
 		EB960C97294C230F00DA13A6 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB960C95294C230F00DA13A6 /* ItemTableViewCell.xib */; };
 		EB9C6581293E1E1200CF5FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6580293E1E1200CF5FED /* AppDelegate.swift */; };
 		EB9C6583293E1E1200CF5FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6582293E1E1200CF5FED /* SceneDelegate.swift */; };
-		EB9C6585293E1E1200CF5FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6584293E1E1200CF5FED /* ViewController.swift */; };
+		EB9C6585293E1E1200CF5FED /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C6584293E1E1200CF5FED /* ItemViewController.swift */; };
 		EB9C6588293E1E1200CF5FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9C6586293E1E1200CF5FED /* Main.storyboard */; };
 		EB9C658A293E1E1400CF5FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9C6589293E1E1400CF5FED /* Assets.xcassets */; };
 		EB9C658D293E1E1400CF5FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9C658B293E1E1400CF5FED /* LaunchScreen.storyboard */; };
@@ -24,12 +26,14 @@
 
 /* Begin PBXFileReference section */
 		EB1040B9294C277100CC0231 /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
+		EB3A88B92959241A00EC8418 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
+		EB4FE3802958305200C6302C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		EB960C94294C230F00DA13A6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		EB960C95294C230F00DA13A6 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		EB9C657D293E1E1200CF5FED /* RealmKakeioboSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmKakeioboSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9C6580293E1E1200CF5FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB9C6582293E1E1200CF5FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB9C6584293E1E1200CF5FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB9C6584293E1E1200CF5FED /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		EB9C6587293E1E1200CF5FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB9C6589293E1E1400CF5FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB9C658C293E1E1400CF5FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,8 +76,11 @@
 			children = (
 				EB9C6580293E1E1200CF5FED /* AppDelegate.swift */,
 				EB9C6582293E1E1200CF5FED /* SceneDelegate.swift */,
-				EB9C6584293E1E1200CF5FED /* ViewController.swift */,
+				EB4FE3802958305200C6302C /* CategoryViewController.swift */,
+				EB9C6584293E1E1200CF5FED /* ItemViewController.swift */,
 				EB1040B9294C277100CC0231 /* NewItemViewController.swift */,
+				EB3A88B92959241A00EC8418 /* NewCategoryViewController.swift */,
+				EB9C658E293E1E1400CF5FED /* Info.plist */,
 				EB9C6586293E1E1200CF5FED /* Main.storyboard */,
 				EB960C94294C230F00DA13A6 /* ItemTableViewCell.swift */,
 				EB960C95294C230F00DA13A6 /* ItemTableViewCell.xib */,
@@ -81,7 +88,6 @@
 				EB9C659B293E2C2F00CF5FED /* Category.swift */,
 				EB9C6589293E1E1400CF5FED /* Assets.xcassets */,
 				EB9C658B293E1E1400CF5FED /* LaunchScreen.storyboard */,
-				EB9C658E293E1E1400CF5FED /* Info.plist */,
 			);
 			path = RealmKakeioboSample;
 			sourceTree = "<group>";
@@ -165,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9C6585293E1E1200CF5FED /* ViewController.swift in Sources */,
+				EB9C6585293E1E1200CF5FED /* ItemViewController.swift in Sources */,
+				EB3A88BA2959241A00EC8418 /* NewCategoryViewController.swift in Sources */,
 				EB9C659C293E2C2F00CF5FED /* Category.swift in Sources */,
 				EB9C659A293E2B0C00CF5FED /* ShoppingItem.swift in Sources */,
 				EB9C6581293E1E1200CF5FED /* AppDelegate.swift in Sources */,
+				EB4FE3812958305200C6302C /* CategoryViewController.swift in Sources */,
 				EB960C96294C230F00DA13A6 /* ItemTableViewCell.swift in Sources */,
 				EB9C6583293E1E1200CF5FED /* SceneDelegate.swift in Sources */,
 				EB1040BA294C277100CC0231 /* NewItemViewController.swift in Sources */,

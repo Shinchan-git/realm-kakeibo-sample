@@ -16,6 +16,8 @@ class NewItemViewController: UIViewController {
     @IBOutlet var priceTextField: UITextField!
     @IBOutlet var markSwitch: UISwitch!
     
+    var category: Category!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,10 +27,11 @@ class NewItemViewController: UIViewController {
         item.title = titleTextField.text ?? ""
         item.price = Int(priceTextField.text ?? "") ?? 0
         item.isMarked = markSwitch.isOn
+        item.category = category
         createItem(item: item)
         
         let previousNC = self.presentingViewController as! UINavigationController
-        let previousVC = previousNC.viewControllers[previousNC.viewControllers.count - 1] as! ViewController
+        let previousVC = previousNC.viewControllers[previousNC.viewControllers.count - 1] as! ItemViewController
         previousVC.reloadTableView()
         
         self.dismiss(animated: true)
@@ -37,6 +40,16 @@ class NewItemViewController: UIViewController {
     func createItem(item: ShoppingItem) {
         try! realm.write {
             realm.add(item)
+        }
+    }
+    
+    func readCategories() -> [Category] {
+        return Array(realm.objects(Category.self))
+    }
+    
+    func createCategory(category: Category) {
+        try! realm.write {
+            realm.add(category)
         }
     }
     

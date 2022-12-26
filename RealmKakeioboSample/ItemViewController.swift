@@ -8,12 +8,13 @@
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ItemViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
 
     let realm = try! Realm()
     var items: [ShoppingItem] = []
+    var selectedCategory: Category!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ItemTableViewCell", bundle: nil), forCellReuseIdentifier: "ItemTableViewCell")
         items = readItems()
+        print(items)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,14 +31,21 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
-        let item = items[indexPath.row]
+        let item: ShoppingItem = items[indexPath.row]
         cell.setCell(title: item.title, price: item.price, isMarked: item.isMarked)
     
         return cell
     }
     
     func readItems() -> [ShoppingItem] {
-        return Array(realm.objects(ShoppingItem.self))
+        return Array(realm.objects(ShoppingItem.self).filter("category == %@", selectedCategory!))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toNewItemView" {
+            let newItemViewController = segue.destination as! NewItemViewController
+            newItemViewController.category = self.selectedCategory
+        }
     }
     
     func reloadTableView() {
