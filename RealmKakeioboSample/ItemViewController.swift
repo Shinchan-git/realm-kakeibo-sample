@@ -23,6 +23,7 @@ class ItemViewController: UIViewController, UITableViewDataSource {
         tableView.register(UINib(nibName: "ItemTableViewCell", bundle: nil), forCellReuseIdentifier: "ItemTableViewCell")
         items = readItems()
         print(items)
+        self.navigationItem.title = selectedCategory.title
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

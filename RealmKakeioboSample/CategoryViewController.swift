@@ -22,6 +22,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.dataSource = self
         tableView.delegate = self
         categories = readCategories()
+//        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

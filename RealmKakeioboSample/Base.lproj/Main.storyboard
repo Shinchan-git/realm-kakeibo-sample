@@ -179,7 +179,7 @@
             </objects>
             <point key="canvasLocation" x="2791" y="4"/>
         </scene>
-        <!--Category View Controller-->
+        <!--カテゴリー-->
         <scene sceneID="J7N-W4-vD9">
             <objects>
                 <viewController id="E4C-46-EzT" customClass="CategoryViewController" customModule="RealmKakeioboSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -211,7 +211,7 @@
                             <constraint firstItem="gQ7-Zx-74K" firstAttribute="trailing" secondItem="tKS-JW-FL2" secondAttribute="trailing" id="dXp-LL-lmS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HQM-r2-vFX">
+                    <navigationItem key="navigationItem" title="カテゴリー" id="HQM-r2-vFX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jfY-KO-0xd">
                             <connections>
                                 <segue destination="b7o-4k-cIN" kind="presentation" id="0xR-Ci-JEa"/>
