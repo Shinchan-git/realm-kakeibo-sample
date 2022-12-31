@@ -47,10 +47,4 @@ class NewItemViewController: UIViewController {
         return Array(realm.objects(Category.self))
     }
     
-    func createCategory(category: Category) {
-        try! realm.write {
-            realm.add(category)
-        }
-    }
-    
 }
